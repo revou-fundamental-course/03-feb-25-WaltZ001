@@ -15,14 +15,12 @@ document.getElementById('temperatureForm').addEventListener('submit', function (
 
     // Tampilkan hasil
     document.getElementById('fahrenheit').value = fahrenheit.toFixed(2);
-    document.getElementById('result').classList.remove('hidden');
 });
 
 // Tombol Reset
 document.getElementById('resetButton').addEventListener('click', function () {
     document.getElementById('celsius').value = '';
     document.getElementById('fahrenheit').value = '';
-    document.getElementById('result').classList.add('hidden');
 });
 
 // Tombol Reverse (Fahrenheit ke Celsius)

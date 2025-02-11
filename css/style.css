@@ -50,6 +50,7 @@ input {
     display: flex;
     justify-content: space-between;
     gap: 10px;
+    margin-bottom: 15px;
 }
 
 button {
@@ -86,14 +87,6 @@ button[type="submit"]:hover {
 
 #reverseButton:hover {
     background-color: #e0a800;
-}
-
-.hidden {
-    display: none;
-}
-
-#result {
-    margin-top: 20px;
 }
 
 #fahrenheit {
