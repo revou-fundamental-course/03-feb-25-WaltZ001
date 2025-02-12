@@ -1,10 +1,16 @@
+// Fungsi untuk memvalidasi input hanya angka
+function validateNumber(input) {
+    input.value = input.value.replace(/[^0-9.-]/g, ''); // Hanya angka, titik, dan minus yang diperbolehkan
+}
+
 function convert() {
     const celsiusInput = document.getElementById('celsius');
     const fahrenheitInput = document.getElementById('fahrenheit');
     const explanation = document.getElementById('explanation');
     const formulaText = document.getElementById('conversion-formula');
 
-    if (isNaN(celsiusInput.value) || celsiusInput.value === "") {
+    // Validasi input kosong atau tidak valid
+    if (celsiusInput.value === "" || isNaN(celsiusInput.value)) {
         alert("Masukkan angka yang valid!");
         return;
     }
@@ -28,7 +34,7 @@ function reverseConversion() {
     const celsiusInput = document.getElementById('celsius');
     const fahrenheitInput = document.getElementById('fahrenheit');
     
-    if (isNaN(fahrenheitInput.value) {
+    if (fahrenheitInput.value === "" || isNaN(fahrenheitInput.value)) {
         alert("Hasil konversi tidak valid!");
         return;
     }
